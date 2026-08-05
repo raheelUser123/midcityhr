@@ -1,4 +1,4 @@
-<?php $title='Property Management Turna Calculator | Mid City Home Restoration';$description='Estimate turna work, vacancy cost, and portfolio impact.';require_once __DIR__.'/../includes/header.php';?><style>
+<?php $title='Property Management Turna Calculator | Midcity Handyman & Remodeling';$description='Estimate turna work, vacancy cost, and portfolio impact.';require_once __DIR__.'/../includes/header.php';?><style>
 #mhr-pm-page,
 *,
 *::before,
@@ -1062,7 +1062,7 @@ a{
 
   <!-- DISCLAIMER -->
   <section class="pmcalc-disclaimer">
-    <p><strong>Note:</strong> Estimates are approximate ranges only. Final pricing is determined after an on-site assessment by the Mid City Home Restoration team. Actual costs may vary based on unit condition, material selections, and local code requirements.</p>
+    <p><strong>Note:</strong> Estimates are approximate ranges only. Final pricing is determined after an on-site assessment by the Midcity Handyman & Remodeling team. Actual costs may vary based on unit condition, material selections, and local code requirements.</p>
     <p>Serving property managers across Western New York within a 45-mile radius of Lockport, NY. Licensed NY Electrician and Plumber subcontracted per code where required.</p>
   </section>
 

@@ -1,6 +1,6 @@
 <?php
 return [
-    'site_name' => 'Mid City Home Restoration',
+    'site_name' => 'Midcity Handyman & Remodeling',
     'site_url' => getenv('SITE_URL') ?: 'https://midcityhr.com',
 
     'phone' => '+1 (833) 736-6647',
@@ -15,7 +15,7 @@ return [
         'password' => getenv('SMTP_PASSWORD') ?: 'pspjjiedbrytucsg', // Google App Password
         'encryption' => getenv('SMTP_ENCRYPTION') ?: 'tls',
         'from_email' => getenv('MAIL_FROM') ?: 'info@midcityhr.com',
-        'from_name' => 'Mid City Home Restoration',
+        'from_name' => 'Midcity Handyman & Remodeling',
     ],
     'mail_from' => getenv('MAIL_FROM') ?: 'info@midcityhr.com',
 

@@ -38,7 +38,7 @@ $form_context = $form_context ?? 'Website estimate request';
       <div class="field"><label>Phone number *</label><input name="phone" required autocomplete="tel"></div>
       <div class="field full"><label>Email address *</label><input type="email" name="email" required autocomplete="email"></div>
       <div class="field full"><label>Best contact method</label><div class="inline-options"><label><input type="radio" name="contact_method" value="Phone" checked> Phone</label><label><input type="radio" name="contact_method" value="Text"> Text</label><label><input type="radio" name="contact_method" value="Email"> Email</label></div></div>
-      <div class="field full"><label class="consent"><input type="checkbox" name="consent" required> I agree that Mid City Home Restoration may contact me about this request.</label></div>
+      <div class="field full"><label class="consent"><input type="checkbox" name="consent" required> I agree that Midcity Handyman & Remodeling may contact me about this request.</label></div>
     </div>
     <div class="wizard-actions"><button class="button ghost wizard-prev" type="button">← Back</button><button class="button" type="submit">Book My Free Site Visit</button></div>
     <div class="notice" role="status"></div>

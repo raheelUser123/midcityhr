@@ -90,7 +90,7 @@ function makeMailer(array $cfg): PHPMailer {
     $mail->Timeout = 20;
     $mail->setFrom(
         (string)($cfg['mail']['from_email'] ?? $cfg['email']),
-        (string)($cfg['mail']['from_name'] ?? 'Mid City Home Restoration')
+        (string)($cfg['mail']['from_name'] ?? 'Midcity Handyman & Remodeling')
     );
     return $mail;
 }
@@ -101,7 +101,7 @@ if (empty($cfg['mail']['username']) || empty($cfg['mail']['password'])) {
 } else {
     try {
         $mail = makeMailer($cfg);
-        $mail->addAddress((string)$cfg['email'], 'Mid City Home Restoration');
+        $mail->addAddress((string)$cfg['email'], 'Midcity Handyman & Remodeling');
         $mail->addReplyTo((string)$lead['email'], (string)$lead['name']);
         $mail->isHTML(true);
         $mail->Subject = 'New website lead: '.$lead['name'].' — '.($lead['service'] ?: 'General inquiry');
@@ -116,9 +116,9 @@ if (empty($cfg['mail']['username']) || empty($cfg['mail']['password'])) {
     try {
         $customerMail = makeMailer($cfg);
         $customerMail->addAddress((string)$lead['email'], (string)$lead['name']);
-        $customerMail->addReplyTo((string)$cfg['email'], 'Mid City Home Restoration');
+        $customerMail->addReplyTo((string)$cfg['email'], 'Midcity Handyman & Remodeling');
         $customerMail->isHTML(true);
-        $customerMail->Subject = 'We received your project request — Mid City Home Restoration';
+        $customerMail->Subject = 'We received your project request — Midcity Handyman & Remodeling';
         $customerMail->Body = render_customer_email_template($lead);
         $customerMail->AltBody = "Hi {$lead['name']},\n\nWe received your {$lead['service']} request. Our team will review it and contact you to arrange the next step.\n\nCall 1-833-RENO-MHR if you need immediate assistance.";
         $delivery['customer_email'] = $customerMail->send();

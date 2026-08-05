@@ -1,4 +1,4 @@
-# Mid City Home Restoration — Custom PHP Website
+# Midcity Handyman & Remodeling — Custom PHP Website
 
 ## Local run
 
