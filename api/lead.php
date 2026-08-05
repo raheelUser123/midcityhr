@@ -1,0 +1,15 @@
+<?php
+declare(strict_types=1);header('Content-Type: application/json');header('X-Content-Type-Options: nosniff');require_once __DIR__.'/../includes/functions.php';
+if($_SERVER['REQUEST_METHOD']!=='POST'){http_response_code(405);echo json_encode(['ok'=>false,'message'=>'Method not allowed']);exit;}
+if(session_status()!==PHP_SESSION_ACTIVE)session_start();
+if(!hash_equals($_SESSION['csrf']??'',$_POST['csrf']??'')){http_response_code(403);echo json_encode(['ok'=>false,'message'=>'Please refresh and try again.']);exit;}
+if(!empty($_POST['website'])){echo json_encode(['ok'=>true,'message'=>'Thank you.']);exit;}
+$lead=['name'=>trim($_POST['name']??''),'phone'=>trim($_POST['phone']??''),'email'=>filter_var(trim($_POST['email']??''),FILTER_VALIDATE_EMAIL),'service'=>trim($_POST['service']??'General inquiry'),'address'=>trim($_POST['address']??''),'message'=>trim($_POST['message']??''),'timeline'=>trim($_POST['timeline']??''),'budget'=>trim($_POST['budget']??''),'contact_method'=>trim($_POST['contact_method']??'Phone'),'context'=>trim($_POST['context']??'Website form')];
+if(!$lead['name']||!$lead['phone']||!$lead['email']||!$lead['message']){http_response_code(422);echo json_encode(['ok'=>false,'message'=>'Please complete all required fields.']);exit;}
+$description="Name: {$lead['name']}\nPhone: {$lead['phone']}\nEmail: {$lead['email']}\nService: {$lead['service']}\nAddress: {$lead['address']}\n\nProject details:\n{$lead['message']}";
+$cfg=config(); $delivery=[];
+if($cfg['clickup']['token']&&$cfg['clickup']['list_id']){$payload=json_encode(['name'=>"Website lead — {$lead['name']} — {$lead['service']}",'description'=>$description,'tags'=>['website-lead']]);$ch=curl_init('https://api.clickup.com/api/v2/list/'.rawurlencode($cfg['clickup']['list_id']).'/task');curl_setopt_array($ch,[CURLOPT_POST=>true,CURLOPT_RETURNTRANSFER=>true,CURLOPT_TIMEOUT=>12,CURLOPT_HTTPHEADER=>['Authorization: '.$cfg['clickup']['token'],'Content-Type: application/json'],CURLOPT_POSTFIELDS=>$payload]);$body=curl_exec($ch);$status=curl_getinfo($ch,CURLINFO_HTTP_CODE);curl_close($ch);$delivery['clickup']=$status>=200&&$status<300;if(!$delivery['clickup'])error_log('ClickUp lead failure '.$status.' '.$body);}
+$html=render_email_template($lead);$subject='New website lead: '.$lead['name'].' — '.($lead['service']?:'General inquiry');$headers=['MIME-Version: 1.0','Content-Type: text/html; charset=UTF-8','From: Mid City Website <'.$cfg['mail_from'].'>','Reply-To: '.$lead['name'].' <'.$lead['email'].'>'];$delivery['email']=@mail($cfg['email'],$subject,$html,implode("\r\n",$headers));
+$log=['time'=>date(DATE_ATOM),'lead'=>$lead,'delivery'=>$delivery];file_put_contents(__DIR__.'/../data/leads.ndjson',json_encode($log).PHP_EOL,FILE_APPEND|LOCK_EX);
+if(isset($delivery['clickup'])&&!$delivery['clickup']&&!$delivery['email']){http_response_code(502);echo json_encode(['ok'=>false,'message'=>'Your request could not be delivered. Please call us directly.']);exit;}
+$_SESSION['csrf']=bin2hex(random_bytes(24));echo json_encode(['ok'=>true,'message'=>'Thanks — your project request has been received.']);

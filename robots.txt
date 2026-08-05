@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /includes/
+Sitemap: https://midcityhr.com/sitemap.xml
