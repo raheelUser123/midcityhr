@@ -1,0 +1,1 @@
+<?php $area_slug='batavia-ny'; require __DIR__.'/../../includes/service-area-page.php';

@@ -1,0 +1,1 @@
+<?php $area_slug='clarence-ny'; require __DIR__.'/../../includes/service-area-page.php';

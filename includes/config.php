@@ -13,10 +13,11 @@ return [
         'port' => getenv('SMTP_PORT') ?: 587,
         'username' => getenv('SMTP_USERNAME') ?: 'info@midcityhr.com',
         'password' => getenv('SMTP_PASSWORD') ?: 'pspjjiedbrytucsg', // Google App Password
-        'encryption' => 'tls',
+        'encryption' => getenv('SMTP_ENCRYPTION') ?: 'tls',
         'from_email' => getenv('MAIL_FROM') ?: 'info@midcityhr.com',
         'from_name' => 'Mid City Home Restoration',
     ],
+    'mail_from' => getenv('MAIL_FROM') ?: 'info@midcityhr.com',
 
     'clickup' => [
         'token' => getenv('CLICKUP_API_TOKEN') ?: 'pk_87315537_KLOCR5UYJQE40QBQCZZ06WXGOR2GGVUS',

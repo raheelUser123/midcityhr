@@ -11,3 +11,5 @@ qa('[data-wizard-form]').forEach(form=>{
   qa('.wizard-next',form).forEach(b=>b.addEventListener('click',()=>{if(valid())show(current+1)}));
   qa('.wizard-prev',form).forEach(b=>b.addEventListener('click',()=>show(current-1)));
 });
+
+(function(){const items=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){items.forEach(x=>x.classList.add('is-visible'));return;}const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -40px'});items.forEach(x=>io.observe(x));})();

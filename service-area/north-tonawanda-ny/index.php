@@ -1,0 +1,1 @@
+<?php $area_slug='north-tonawanda-ny'; require __DIR__.'/../../includes/service-area-page.php';

@@ -1,0 +1,1 @@
+<?php $area_slug='amherst-ny'; require __DIR__.'/../../includes/service-area-page.php';
