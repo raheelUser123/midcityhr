@@ -23,6 +23,9 @@ function article_data(){ return require __DIR__.'/../data/articles.php'; }
 function render_email_template(array $lead): string {
   ob_start(); include __DIR__.'/email-template.php'; return (string)ob_get_clean();
 }
+function render_customer_email_template(array $lead): string {
+  ob_start(); include __DIR__.'/customer-email-template.php'; return (string)ob_get_clean();
+}
 
 function service_areas(): array { return [
 ['slug'=>'akron-ny','city'=>'Akron','county'=>'Erie County','intro'=>'Your neighbor in Lockport, just 15 minutes away. Process-driven remodeling for Akron homes old and new.'],
