@@ -1,43 +1,69 @@
-Options -Indexes
-DirectoryIndex index.php
-ErrorDocument 404 /404.php
+# =========================================================
+# OLD URL 301 REDIRECTS - HIGH PRIORITY
+# =========================================================
 
-<IfModule mod_headers.c>
-Header always set X-Content-Type-Options "nosniff"
-Header always set Referrer-Policy "strict-origin-when-cross-origin"
-Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
-</IfModule>
+RewriteRule ^basement-finishing-cost-amherst-ny/?$ /service-area/amherst-ny/ [R=301,L]
+RewriteRule ^basement-finishing-cost-buffalo-ny/?$ /service-area/buffalo-ny/ [R=301,L]
+RewriteRule ^basement-finishing-cost-cheektowaga-ny/?$ /service-area/cheektowaga-ny/ [R=301,L]
+RewriteRule ^basement-finishing-cost-lockport-ny/?$ /service-area/lockport-ny/ [R=301,L]
+RewriteRule ^basement-finishing-permits-new-york/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^basement-permit-buffalo-ny/?$ /services/basement-finishing/ [R=301,L]
 
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
-</IfModule>
+RewriteRule ^bathroom-remodel-cost-amherst-ny/?$ /service-area/amherst-ny/ [R=301,L]
+RewriteRule ^bathroom-remodel-cost-buffalo-ny/?$ /service-area/buffalo-ny/ [R=301,L]
+RewriteRule ^bathroom-remodel-cost-cheektowaga-ny/?$ /service-area/cheektowaga-ny/ [R=301,L]
+RewriteRule ^bathroom-remodel-cost-lockport-ny/?$ /service-area/lockport-ny/ [R=301,L]
+RewriteRule ^bathroom-remodel-cost-niagara-falls-ny/?$ /service-area/niagara-falls-ny/ [R=301,L]
+RewriteRule ^bathroom-remodel-permits-new-york/?$ /services/bathroom-remodeling/ [R=301,L]
 
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType text/css "access plus 1 month"
-ExpiresByType application/javascript "access plus 1 month"
-ExpiresByType image/jpeg "access plus 1 year"
-ExpiresByType image/webp "access plus 1 year"
-</IfModule>
+RewriteRule ^blog/categories/concrete-projects-costs/?$ /services/ [R=301,L]
+RewriteRule ^category/cost-guide/?$ /services/ [R=301,L]
+RewriteRule ^egress-window-requirements-basement-new-york/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^general-renovation-cost-guide-buffalo-ny/?$ /service-area/buffalo-ny/ [R=301,L]
 
-RewriteEngine On
+RewriteRule ^kitchen-remodel-cost-amherst-ny/?$ /service-area/amherst-ny/ [R=301,L]
+RewriteRule ^kitchen-remodel-cost-buffalo-ny/?$ /service-area/buffalo-ny/ [R=301,L]
+RewriteRule ^kitchen-remodel-cost-lockport-ny/?$ /service-area/lockport-ny/ [R=301,L]
+RewriteRule ^kitchen-remodel-cost-williamsville-ny/?$ /service-area/williamsville-ny/ [R=301,L]
+RewriteRule ^kitchen-remodel-permits-new-york/?$ /services/kitchen-renovation/ [R=301,L]
 
-# 1. Redirect external GET requests with .php to extensionless (using THE_REQUEST to avoid loops)
-# This prevents POST requests (like contact form submissions to process-contact.php) from losing POST data in a 301 redirect.
-RewriteCond %{REQUEST_METHOD} GET
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^\s]+)\.php [NC]
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^plumbing-permit-bathroom-remodel-new-york/?$ /services/bathroom-remodeling/ [R=301,L]
 
-# 2. Redirect trailing slash to non-trailing slash (excluding actual directories)
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^(.+)/$
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^post/cost-of-a-full-basement-remodel-in-buffalo-ny-budgeting-tips/?$ /service-area/buffalo-ny/ [R=301,L]
+RewriteRule ^post/cost-of-adding-a-second-story-to-your-home-comprehensive-guide/?$ /services/ [R=301,L]
+RewriteRule ^post/cost-of-converting-a-basement-into-a-rental-unit-ultimate-guide/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^post/cost-to-build-a-covered-deck-in-niagara-county-essential-guide/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/how-can-i-reduce-heating-costs-during-the-winter-with-better-insulation-save-big/?$ /services/ [R=301,L]
+RewriteRule ^post/how-do-general-contractors-price-jobs/?$ /services/ [R=301,L]
+RewriteRule ^post/how-do-i-install-an-egress-window-in-a-basement-step-by-step-guide/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^post/how-much-does-general-contractor-make/?$ /services/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-add-a-second-bathroom-to-a-home-find-out/?$ /services/bathroom-remodeling/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-finish-a-basement-budget-tips/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-remodel-a-home-office-budget-tips/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-repair-a-foundation-crack-find-out-now/?$ /services/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-repair-an-aging-chimney-find-out-now/?$ /services/ [R=301,L]
+RewriteRule ^post/how-much-does-it-cost-to-replace-a-home-s-siding-find-out-now/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/how-much-should-you-pay-a-general-contractor/?$ /services/ [R=301,L]
+RewriteRule ^post/how-much-value-does-a-finished-basement-add-to-a-home-discover-now/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^post/pipe-insulation-benefits-save-energy-and-cut-costs/?$ /services/ [R=301,L]
+RewriteRule ^post/the-cost-of-a-whole-home-remodel-budgeting-for-your-dream-home/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/the-cost-of-installing-custom-cabinets-what-to-expect/?$ /services/kitchen-renovation/ [R=301,L]
+RewriteRule ^post/the-cost-of-refinishing-hardwood-floors-what-you-need-to-know-docx/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/what-is-the-average-cost-of-a-kitchen-remodel-in-amherst-ny-find-out-now/?$ /service-area/amherst-ny/ [R=301,L]
+RewriteRule ^post/what-is-the-average-cost-of-a-kitchen-remodel-in-lockport-ny-find-out/?$ /service-area/lockport-ny/ [R=301,L]
+RewriteRule ^post/what-is-the-average-cost-of-a-kitchen-remodel-in-williamsville-ny-find-out/?$ /service-area/williamsville-ny/ [R=301,L]
+RewriteRule ^post/what-is-the-cost-of-converting-a-garage-into-a-living-space-expert-insights/?$ /services/ [R=301,L]
+RewriteRule ^post/what-permits-are-needed-for-a-basement-remodel-essential-guide/?$ /services/basement-finishing/ [R=301,L]
+RewriteRule ^post/what-s-the-average-cost-of-a-full-kitchen-remodel-a-2024-guide/?$ /services/kitchen-renovation/ [R=301,L]
+RewriteRule ^post/what-s-the-average-cost-of-a-new-roof-installation_?-find-out-now/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/what-s-the-average-cost-of-adding-a-garage-to-a-home-find-out-now/?$ /services/ [R=301,L]
+RewriteRule ^post/what-s-the-average-cost-of-adding-a-garage-to-a-home_?-find-out-now/?$ /services/ [R=301,L]
+RewriteRule ^post/what-s-the-cost-of-replacing-an-hvac-system-find-out-now/?$ /services/ [R=301,L]
+RewriteRule ^post/what-to-know-about-zoning-laws-and-permits-for-home-remodeling-essential-tips/?$ /services/general-renovation/ [R=301,L]
+RewriteRule ^post/window-tinting-for-energy-savings-cut-costs-and-stay-cool/?$ /services/general-renovation/ [R=301,L]
 
-# 3. Internal rewrite to add .php extension for existing PHP files
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^/]+)$ $1.php [NC,L]
-# Protect environment and log files
-<FilesMatch "^(\.env|\.env\..*|leads\.ndjson)$">
-  Require all denied
-</FilesMatch>
+RewriteRule ^property-turnover-cost-western-ny/?$ /services/property-management-turnas/ [R=301,L]
+
+# =========================================================
+# END HIGH PRIORITY REDIRECTS
+# =========================================================
