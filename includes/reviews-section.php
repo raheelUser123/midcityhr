@@ -1,1 +1,184 @@
-<section class="section reviews-section"><div class="wrap"><div class="reviews-top"><div><p class="eyebrow">What our clients say</p><h2>5.0 <span class="stars">★★★★★</span></h2><p>18 Google Reviews · Every review is from a verified Google Business Profile.</p></div><a class="button ghost" href="https://www.google.com/search?q=Mid+City+Home+Restoration+reviews" target="_blank" rel="noopener">Read Our Google Reviews</a></div><div class="review-grid"><article class="review-card"><div class="stars">★★★★★</div><blockquote>“I first reached out to MidCity for a quick paint touch-up, but after seeing their professionalism and quality of work, I hired them for a complete living room makeover. They managed every detail seamlessly.”</blockquote><strong>Ailyn Guerrero</strong><span>General Renovation</span></article><article class="review-card"><div class="stars">★★★★★</div><blockquote>“I had a leak that turned out to be a major issue. MidCity was very reasonable, quickly scheduled an appointment, stayed on budget, and overall I am very satisfied.”</blockquote><strong>James Nolan</strong><span>Kitchen Remodeling</span></article><article class="review-card"><div class="stars">★★★★★</div><blockquote>“We had water damage in our basement and needed help fast. MidCity showed up the next day, handled the repairs, and suggested upgrades to prevent future issues.”</blockquote><strong>Brian Kim</strong><span>Basement Finishing</span></article></div></div></section>
+<section class="section reviews-section">
+  <div class="wrap">
+    <div class="reviews-top">
+      <div>
+        <p class="eyebrow">What our clients say</p>
+        <h2>5.0 <span class="stars">★★★★★</span></h2>
+        <p>18 Google Reviews · Every review is from a verified Google Business Profile.</p>
+      </div>
+
+      <a
+        class="button ghost"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        Read Our Google Reviews
+      </a>
+    </div>
+
+    <div class="review-grid">
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “I am very pleased with the power washing around our pool and patio.
+          We had moss growing between our interlocking tiles; Gary washed away
+          the moss and mud. He moved flower pots, furniture and grills as he worked.”
+        </blockquote>
+        <strong>Bernadette Corcoran Gaffney</strong>
+        <span>Power Washing</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “As a Licensed Real Estate Broker, part of my job is to know a guy who
+          can do that. I recommend MidCity Handyman & Remodeling to my clients
+          and colleagues for a wide variety of home repairs and complete remodeling jobs.”
+        </blockquote>
+        <strong>Christopher Mekker</strong>
+        <span>Home Repairs & Remodeling</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “MidCity Handyman & Remodeling was straightforward and easy to work with.
+          Communication stayed consistent, the process felt organized, and
+          expectations were clear from the start.”
+        </blockquote>
+        <strong>Finner Clinton</strong>
+        <span>Home Improvement</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “Gary is a hardworking, never-give-up kind of guy. He is in it for
+          the long haul, and MidCity Handyman & Remodeling are very competitive
+          in their pricing.”
+        </blockquote>
+        <strong>Yvonne Altheide</strong>
+        <span>Handyman Services</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “I first reached out to MidCity for a quick paint touch-up, but after
+          seeing their professionalism and quality of work, I hired them for a
+          complete living room makeover. They managed every detail seamlessly.”
+        </blockquote>
+        <strong>Ailyn Guerrero</strong>
+        <span>Living Room Renovation</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “I had a leak that turned out to be a major issue. MidCity was very
+          reasonable, quickly scheduled an appointment, stayed on budget, and
+          overall I am very satisfied.”
+        </blockquote>
+        <strong>James Nolan</strong>
+        <span>Repair & Remodeling</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “We bought a fixer-upper and were overwhelmed by the amount of work.
+          MidCity stepped in and tackled project after project, from painting to
+          electrical updates. They made the whole place livable faster than we expected.”
+        </blockquote>
+        <strong>Stephen Kovac</strong>
+        <span>Whole-Home Improvements</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “They showed up on time, communicated clearly throughout the project,
+          and delivered exactly what I was hoping for. The work was done with
+          care and precision—no shortcuts, no surprises.”
+        </blockquote>
+        <strong>Jesse Morse, MD</strong>
+        <span>Home Improvements</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “I was worried about hiring someone for repairs while I was at work
+          all day, but MidCity made it so easy. They kept me updated with photos,
+          explained what they were doing, and when I got home everything was spotless.”
+        </blockquote>
+        <strong>Natallia Alessi</strong>
+        <span>Home Repairs</span>
+      </a>
+
+      <a
+        class="review-card"
+        href="https://www.google.com/search?q=mid+city+handyman+and+remodeling&rlz=1C1HKFL_en-GBPK1199PK1199&oq=mid+city+handy&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyDQgBEC4YrwEYxwEYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIxNTBqMGo0qAIAsAIB&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x897c6dbc549b5b8b:0xc38135c986e79cb1,1,,,,"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          “We had water damage in our basement and needed help fast. MidCity’s
+          team showed up the next day, handled all the repairs, and even suggested
+          upgrades to prevent future issues. Now our basement looks brand new!”
+        </blockquote>
+        <strong>Brian Kim</strong>
+        <span>Basement Restoration</span>
+      </a>
+
+    </div>
+  </div>
+</section>
