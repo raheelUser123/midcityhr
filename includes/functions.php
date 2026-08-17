@@ -8,7 +8,7 @@ function base_path(){
   $configured = trim((string)(getenv('BASE_PATH') ?: ''), '/');
   if ($configured !== '') return '/'.$configured;
   $script = str_replace('\\','/', $_SERVER['SCRIPT_NAME'] ?? '/index.php');
-  $known = ['/services/','/articles/','/contact/','/about/','/warranty/','/owner/','/licensed-remodeling-company/','/how-it-works/','/project-gallery/','/service-area/','/privacy-policy/','/reviews/','/realtors/','/property-managers/','/condo-boards/','/investors-landlords/','/pm-calculator/','/api/'];
+  $known = ['/services/','/articles/','/contact/','/about/','/warranty/','/owner/','/licensed-remodeling-company/','/how-it-works/','/project-gallery/','/service-area/','/privacy-policy/','/terms-of-service/','/reviews/','/realtors/','/property-managers/','/condo-boards/','/investors-landlords/','/pm-calculator/','/api/'];
   foreach($known as $segment){ $pos = strpos($script,$segment); if($pos!==false) return rtrim(substr($script,0,$pos),'/'); }
   $dir = rtrim(dirname($script),'/');
   return $dir==='.' || $dir==='/' ? '' : $dir;

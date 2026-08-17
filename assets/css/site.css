@@ -20,3 +20,13 @@ html{scroll-behavior:smooth}.site-header{z-index:1000}.brand-logo img{height:66p
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.contact-info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}
+.contact-info-card{background:#fff;border:1px solid var(--line);padding:28px;border-radius:6px;box-shadow:0 4px 18px rgba(16,38,50,.04);transition:transform .25s ease,box-shadow .25s ease}
+.contact-info-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,38,50,.08)}
+.contact-info-card.full-width{grid-column:1 / -1}
+.contact-info-card h3{font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 10px 0}
+.contact-info-card p,.contact-info-card address{font-style:normal;font-size:16px;color:var(--ink);margin:0 0 6px 0;line-height:1.6}
+.contact-info-card p:last-child{margin-bottom:0}
+.contact-info-card a{color:var(--navy);font-weight:700;text-decoration:underline}
+.contact-info-card a:hover{color:var(--gold)}
+@media(max-width:850px){.contact-info-grid{grid-template-columns:1fr}}
