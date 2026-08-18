@@ -12,4 +12,16 @@ qa('[data-wizard-form]').forEach(form=>{
   qa('.wizard-prev',form).forEach(b=>b.addEventListener('click',()=>show(current-1)));
 });
 
+document.addEventListener('change',e=>{
+  if(e.target.name==='referral_source'){
+    const wrap=e.target.closest('form')?.querySelector('#referral_other_wrap');
+    if(wrap){
+      const isOther=e.target.value==='Other';
+      wrap.style.display=isOther?'block':'none';
+      const input=wrap.querySelector('input');
+      if(input){input.required=isOther;if(!isOther)input.value='';}
+    }
+  }
+});
+
 (function(){const items=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){items.forEach(x=>x.classList.add('is-visible'));return;}const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -40px'});items.forEach(x=>io.observe(x));})();

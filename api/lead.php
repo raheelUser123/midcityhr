@@ -26,6 +26,10 @@ if (!empty($_POST['website'])) {
     exit;
 }
 
+$referral_source = trim($_POST['referral_source'] ?? '');
+$referral_other = trim($_POST['referral_other'] ?? '');
+$referral_display = ($referral_source === 'Other' && $referral_other !== '') ? "Other ({$referral_other})" : $referral_source;
+
 $lead = [
     'name'=>trim($_POST['name'] ?? ''),
     'phone'=>trim($_POST['phone'] ?? ''),
@@ -35,6 +39,7 @@ $lead = [
     'message'=>trim($_POST['message'] ?? ''),
     'timeline'=>trim($_POST['timeline'] ?? ''),
     'budget'=>trim($_POST['budget'] ?? ''),
+    'referral_source'=>$referral_display,
     'contact_method'=>trim($_POST['contact_method'] ?? 'Phone'),
     'context'=>trim($_POST['context'] ?? 'Website form'),
 ];
@@ -45,7 +50,7 @@ if (!$lead['name'] || !$lead['phone'] || !$lead['email'] || !$lead['message']) {
     exit;
 }
 
-$description = "Name: {$lead['name']}\nPhone: {$lead['phone']}\nEmail: {$lead['email']}\nService: {$lead['service']}\nAddress: {$lead['address']}\nTimeline: {$lead['timeline']}\nBudget: {$lead['budget']}\nPreferred contact: {$lead['contact_method']}\n\nProject details:\n{$lead['message']}";
+$description = "Name: {$lead['name']}\nPhone: {$lead['phone']}\nEmail: {$lead['email']}\nService: {$lead['service']}\nAddress: {$lead['address']}\nTimeline: {$lead['timeline']}\nBudget: {$lead['budget']}\nHow heard about us: ".($lead['referral_source'] ?: 'Not specified')."\nPreferred contact: {$lead['contact_method']}\n\nProject details:\n{$lead['message']}";
 $cfg = config();
 $delivery = ['clickup'=>false, 'admin_email'=>false, 'customer_email'=>false];
 $errors = [];
